@@ -45,6 +45,23 @@
 
     <!--====== Responsive css ======-->
     <link rel="stylesheet" href="css/responsive.css" />
+    <style>
+      .university-list {
+        list-style-type: none;
+        padding-left: 0;
+      }
+      .university-list li {
+        padding: 15px 0;
+      }
+      .section-title {
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-top: 50px;
+      }
+    </style>
   </head>
 
   <body>
@@ -66,7 +83,6 @@
     <!--====== PRELOADER PART START ======-->
 
     <!--====== HEADER PART START ======-->
-
     <header id="header-part">
       <div class="header-top d-none d-lg-block">
         <div class="container">
@@ -178,7 +194,7 @@
                       </ul>
                     </li>
                     <li class="nav-item">
-                      <a href="schools.html">Schools</a>
+                      <a class="active" href="schools.html">Schools</a>
                       <ul class="sub-menu">
                         <li><a href="schools.html">FEDERAL UNIVERSITIES</a></li>
                         <li>
@@ -193,7 +209,7 @@
                       <a href="contact.html">Contact</a>
                     </li>
                     <li class="nav-item">
-                      <a class="active" href="registration.html">Register</a>
+                      <a href="registration.html">Register</a>
                     </li>
                   </ul>
                 </div>
@@ -246,20 +262,20 @@
 
     <section
       id="page-banner"
-      class="pt-105 pb-130 bg_cover"
+      class="pt-105 pb-110 bg_cover"
       data-overlay="8"
-      style="background-image: url(images/page-banner-6.jpg)"
+      style="background-image: url(images/page-banner-2.jpg)"
     >
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
             <div class="page-banner-cont">
-              <h2>Registration</h2>
+              <h2>Universities Accepting IJMB</h2>
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="#">Home</a></li>
                   <li class="breadcrumb-item active" aria-current="page">
-                    Register
+                    schools
                   </li>
                 </ol>
               </nav>
@@ -274,134 +290,143 @@
 
     <!--====== PAGE BANNER PART ENDS ======-->
 
-    <!--====== CONTACT PART START ======-->
+    <!--====== COURSES PART START ======-->
 
-    <section id="contact-page" class="pt-90 pb-120 gray-bg">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <div class="contact-from">
-              <div class="section-title">
-                <h5>Register</h5>
-                <!-- <h2>Keep in touch</h2> -->
-                <p class="mt-3">
-                  Registration is on-going for IJMB & University Diploma
-                  Programmes.Kindly fill the pre-registration form below
-                  ensuring that all information typed into this form are genuine
-                  and correct to your best knowledge.
-                </p>
-              </div>
-              <!-- section title -->
-              <div class="main-form pt-20">
-                <form
-                  id="contact-form"
-                  action="#"
-                  method="post"
-                  data-toggle="validator"
-                >
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="singel-form form-group">
-                        <input
-                          name="name"
-                          type="text"
-                          placeholder="Surname"
-                          data-error="Surname is required."
-                          required="required"
-                        />
-                        <div class="help-block with-errors"></div>
-                      </div>
-                      <!-- singel form -->
-                    </div>
-                    <div class="col-md-6">
-                      <div class="singel-form form-group">
-                        <input
-                          name="others"
-                          type="text"
-                          placeholder="Other names"
-                          data-error="Enter your other names."
-                          required="required"
-                        />
-                        <div class="help-block with-errors"></div>
-                      </div>
-                      <!-- singel form -->
-                    </div>
-                    <div class="col-md-6">
-                      <div class="singel-form form-group">
-                        <input
-                          name="email"
-                          type="email"
-                          placeholder="Email"
-                          data-error="Valid email is required."
-                          required="required"
-                        />
-                        <div class="help-block with-errors"></div>
-                      </div>
-                      <!-- singel form -->
-                    </div>
-
-                    <div class="col-md-6">
-                      <div class="singel-form form-group">
-                        <input
-                          name="phone"
-                          type="text"
-                          placeholder="Phone"
-                          data-error="Phone is required."
-                          required="required"
-                        />
-                        <div class="help-block with-errors"></div>
-                      </div>
-                      <!-- singel form -->
-                    </div>
-                    <div class="col-md-6">
-                      <div class="singel-form form-group">
-                        <input
-                          name="address"
-                          type="text"
-                          placeholder="Residential Address"
-                          data-error="Residential address is required."
-                          required="required"
-                        />
-                        <div class="help-block with-errors"></div>
-                      </div>
-                      <!-- singel form -->
-                    </div>
-                    <div class="col-md-6">
-                      <div class="singel-form form-group">
-                        <select name="gender" class="form-control p-4" required>
-                          <option value="" disabled selected>
-                            Select Gender
-                          </option>
-                          <option value="male">Male</option>
-                          <option value="female">Female</option>
-                        </select>
-                        <div class="help-block with-errors"></div>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="singel-form">
-                        <button type="submit" class="main-btn">Send</button>
-                      </div>
-                      <!-- singel form -->
-                    </div>
-                  </div>
-                  <!-- row -->
-                </form>
-              </div>
-              <!-- main form -->
-            </div>
-            <!--  contact from -->
-          </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="section-title">FEDERAL UNIVERSITIES</div>
+          <ul class="university-list">
+            <li>Abubakar Tafawa Balewa University, Bauchi</li>
+            <li>Ahmandu Bello University, Zaria</li>
+            <li>Bayero University, Kano</li>
+            <li>Federal University, Gashau</li>
+            <li>Federal University Of Petroleum Resources, Effurun</li>
+            <li>Federal University Of Technology, Akure</li>
+            <li>Federal University Of Technology, Minna</li>
+            <li>Federal University, Duste, Jigwa State</li>
+            <li>Federal University, Dustin – Ma, Kastina</li>
+            <li>Federal University, Kashere, Gombe State</li>
+            <li>Federal University , Lafia, Nasarawa, Kogi State</li>
+            <li>Federal University, Otuoke, Bayelsa</li>
+            <li>Federal University, Oye – Ekiti, Ekiti State</li>
+            <li>Federal University, Wukari, Taraba State</li>
+            <li>Federal University, Binin Kebbi</li>
+            <li>Federal University, Gusua</li>
+            <li>Modibbo Adama University Of Technology, Yola</li>
+            <li>National Open University Of Nigeria</li>
+            <li>Nnamdi Azikwe University, Awka</li>
+            <li>University Of Abuja, Gwagwalada</li>
+            <li>Federal University Of Agriculture, Abeokuta</li>
+            <li>University Of Agriculture, Makurdi</li>
+            <li>University Of Benin</li>
+            <li>University Of Calabar</li>
+            <!-- <li>University Of Ibadan</li> -->
+            <li>University Of Ilorin</li>
+            <li>University Of Jos</li>
+            <li>University Of Maiduguri</li>
+            <li>University Of Uyo</li>
+          </ul>
         </div>
-        <!-- row -->
+        <div class="col-md-4">
+          <div class="section-title">STATE UNIVERSITIES</div>
+          <ul class="university-list">
+            <li>Abia State University, Uturu</li>
+            <li>Adamawa State University, Mubi</li>
+            <li>Adekunle Ajasin University, Akungba</li>
+            <li>Akwa Ibom State University Of Technology, Uyo</li>
+            <li>Anambra State University Of Science & Technolgy, Uli</li>
+            <li>Bauchi State University, Gaudau</li>
+            <li>Benue State University, Makurdi</li>
+            <li>Bakar Abba Ibrahim University, Damaturu</li>
+            <li>
+              Cross River State University Of Science & Technology, Calabar
+            </li>
+            <li>Delta State University, Abraka</li>
+            <li>Ebonyi State University, Abakaliki</li>
+            <li>Ekiti State University</li>
+            <li>Enugu State University Of Science And Technology, Enugu</li>
+            <li>Gombe State University, Gombe</li>
+            <li>Ibrahim Badamasi Babangida University, Lapia</li>
+            <li>Ignatius Ajuru University Of Education, Rumuolumeni</li>
+            <li>Imo State University, Owerri</li>
+            <li>Kaduna State University, Kaduna</li>
+            <li>Kano University Of Science & Technology, Wudil</li>
+            <li>Kebbi State University, Kebbi</li>
+            <li>Kogi State University, Anyigba</li>
+            <li>Kwara State University, Ilorin</li>
+            <li>Ladoke Akintola University Of Technology, Ogbomoso</li>
+            <li>Lagos State University, Ojo, Lagos</li>
+            <li>Nasarawa State University, Keffi</li>
+            <li>Niger Delta University, Yenagoa</li>
+            <li>Northwest University, Kano</li>
+            <li>Umaru Musa Yar’Adua University, Kastina</li>
+            <li>Ondo State University Of Science & Technology, Okitipupa</li>
+            <li>Osun State University, Oshogbo</li>
+            <li>Plateau State University, Bokkos</li>
+            <li>River State University Of Science & Technology</li>
+            <li>Sokoto State University, Sokoto</li>
+            <li>Tai Solarin University Of Education, Ijebu – Ode</li>
+            <li>Taraba State University, Jalingo</li>
+            <li>Technical University, Ibadan</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <div class="section-title">PRIVATE UNIVERSITIES</div>
+          <ul class="university-list">
+            <li>Achievers University, Owo</li>
+            <li>Adeleke University, Ede</li>
+            <li>Afe Babalola University, Ado Ekiti, Ekiti State</li>
+            <li>African University Science & Technology, Abuja</li>
+            <li>Ajayi Crowther University, Ibadan</li>
+            <li>Al Hikmah University, Ilorin</li>
+            <li>American University Of Nigerian, Yola</li>
+            <li>Babcock University, Ilishan Remo</li>
+            <li>Baze University</li>
+            <li>Benson Idahosa University, Benin City</li>
+            <li>Bingham University, New Karu</li>
+            <li>Bowen University, Iwo</li>
+            <li>Caleb University, Lagos</li>
+            <li>Caritas University, Enugu</li>
+            <li>CETEP City University, Lagos</li>
+            <li>Covenant University, Ota</li>
+            <li>Crawford University, Igbesa</li>
+            <li>Crescent University</li>
+            <li>Elizade University, Ilara Mokin</li>
+            <li>Evangel University, Akaeze</li>
+            <li>Godfrey Okoye University, Ugwuomu Nike, Enugu State</li>
+            <li>Gregory University, Uturu</li>
+            <li>Igbinedion University, Okada</li>
+            <li>Joseph Ayo Babalola University, Ikeji – Arakeji</li>
+            <li>Kastina University, Kastina</li>
+            <li>Landmark University, Omu – Aran</li>
+            <li>Lead City University, Ibadan</li>
+            <li>Madonna University, Okija</li>
+            <li>Macpherson University, Seriki Sotaya, Ajebo</li>
+            <li>Nigerian Turkish Nile University, Abuja</li>
+            <li>Novena University, Ogume</li>
+            <li>Obong University, Ipetumodu, Osun State</li>
+            <li>Pan African University, Lagos</li>
+            <li>Paul University, Awka, Anambra State</li>
+            <li>Redeemer’s University, Mowe</li>
+            <li>Renaissance University, Enugu</li>
+            <li>Rhema University, Obeama Asa Rivers State</li>
+            <li>Salem University, Lokoja</li>
+            <li>Samuel Adegboyega University, Ogwa</li>
+            <li>Southwestern University, Oku Owa</li>
+            <li>Tansian University, Umuya</li>
+            <li>University Of Mkar, Mkar</li>
+            <li>Veritas University</li>
+            <li>Wellspring University, Evbuobanosa Edo State</li>
+            <li>Wesley University Of Science & Technology, Ondo</li>
+            <li>Western Delta University, Oghara</li>
+            <li>Wukari Jubilee University, Wukari</li>
+          </ul>
+        </div>
       </div>
-      <!-- container -->
-    </section>
-    <div class="map map-big">
-      <div id="contact-map"></div>
     </div>
-    <!-- map -->
-    <!--====== CONTACT PART ENDS ======-->
+
+    <!--====== COURSES PART ENDS ======-->
 
     <!--====== FOOTER PART START ======-->
 
@@ -409,15 +434,15 @@
       <div class="footer-top pt-40 pb-70">
         <div class="container">
           <div class="row">
-            <div class="col-lg-5 col-md-6">
+            <div class="col-lg-3 col-md-6">
               <div class="footer-about mt-40">
                 <div class="logo">
                   <a href="#"><img src="images/logo-2.png" alt="Logo" /></a>
                 </div>
                 <p>
-                  The Interim Joint Matriculation Board Examination (IJMBE)
-                  qualifies students for Direct Entry into the second year (200
-                  Level) of universities in Nigeria and abroad.
+                  Gravida nibh vel velit auctor aliquetn quibibendum auci elit
+                  cons equat ipsutis sem nibh id elit. Duis sed odio sit amet
+                  nibh vulputate.
                 </p>
                 <ul class="mt-20">
                   <li>
@@ -436,14 +461,14 @@
               </div>
               <!-- footer about -->
             </div>
-            <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="col-lg-4 col-md-6 col-sm-6">
               <div class="footer-link mt-40">
                 <div class="footer-title pb-25">
                   <h6>Sitemap</h6>
                 </div>
                 <ul>
                   <li>
-                    <a href="index.html"
+                    <a href="index-2.html"
                       ><i class="fa fa-angle-right"></i>Home</a
                     >
                   </li>
@@ -458,22 +483,17 @@
                     >
                   </li>
                   <li>
-                    <a href="contact.html"
-                      ><i class="fa fa-angle-right"></i>Contact</a
-                    >
-                  </li>
-                  <!-- <li>
                     <a href="blog.html"
                       ><i class="fa fa-angle-right"></i>News</a
                     >
-                  </li> -->
-                  <!-- <li>
+                  </li>
+                  <li>
                     <a href="events.html"
                       ><i class="fa fa-angle-right"></i>Event</a
                     >
-                  </li> -->
+                  </li>
                 </ul>
-                <!-- <ul>
+                <ul>
                   <li>
                     <a href="#"><i class="fa fa-angle-right"></i>Gallery</a>
                   </li>
@@ -495,7 +515,7 @@
                       ><i class="fa fa-angle-right"></i>Contact</a
                     >
                   </li>
-                </ul> -->
+                </ul>
               </div>
               <!-- footer link -->
             </div>
@@ -508,20 +528,20 @@
                   <li>
                     <a href="#"><i class="fa fa-angle-right"></i>FAQS</a>
                   </li>
-                  <!-- <li>
+                  <li>
                     <a href="#"><i class="fa fa-angle-right"></i>Privacy</a>
-                  </li> -->
-                  <!-- <li>
+                  </li>
+                  <li>
                     <a href="#"><i class="fa fa-angle-right"></i>Policy</a>
-                  </li> -->
+                  </li>
                   <li>
                     <a href="#"><i class="fa fa-angle-right"></i>Support</a>
                   </li>
-                  <!-- <li>
+                  <li>
                     <a href="#"
                       ><i class="fa fa-angle-right"></i>Documentation</a
                     >
-                  </li> -->
+                  </li>
                 </ul>
               </div>
               <!-- support -->
@@ -575,7 +595,9 @@
             <div class="col-md-8">
               <div class="copyright text-md-left text-center pt-15">
                 <p>
-                  <a href="#">official@delux_ijmb.com</a>
+                  <a target="_blank" href="https://www.templateshub.net"
+                    >Templates Hub</a
+                  >
                 </p>
               </div>
             </div>
@@ -592,11 +614,11 @@
 
     <!--====== FOOTER PART ENDS ======-->
 
-    <!--====== BACK TO TOP PART START ======-->
+    <!--====== BACK TO TP PART START ======-->
 
     <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 
-    <!--====== BACK TO TOP PART ENDS ======-->
+    <!--====== BACK TO TP PART ENDS ======-->
 
     <!--====== jquery js ======-->
     <script src="js/vendor/modernizr-3.6.0.min.js"></script>
